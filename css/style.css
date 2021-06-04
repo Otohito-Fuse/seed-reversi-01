@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: 游ゴシック体, YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 游ゴシック, 'Yu Gothic', メイリオ, Meiryo, sans-serif;
+    color: #45342a;
+    background: #f6f6f6;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*
+article p {
+    text-indent: 1em;
+    line-height: 1.75;
+    text-align: justify;
+    font-weight: normal;
+}
+*/
+
+a {
+    text-decoration: underline;
+    transition: color .3s;
+}
+
+a:hover {
+    color: #28bb95;
+}
+
+/* WRAPPER
+---------------------------------------------*/
+.wrapper {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 4%;
+    background: #fcfcfc;
+}
+
+
+/* HEADER
+---------------------------------------------*/
+.page-header {
+    font-family: Futura, 'Century Gothic', 游ゴシック体, YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 游ゴシック, 'Yu Gothic', メイリオ, Meiryo, sans-serif;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.page-header h1 {
+    font-size: 2rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    letter-spacing: 0.15rem;
+}
+
+/* FOOTER
+---------------------------------------------*/
+.page-footer {
+    text-align: center;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-family: Futura, 'Century Gothic', 游ゴシック体, YuGothic, 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 游ゴシック, 'Yu Gothic', メイリオ, Meiryo, sans-serif;
+    font-size: 0.875rem;
+    padding: 6px 0;
+    line-height: 1.25;
+}
+
+
+/* MAIN-AREA
+---------------------------------------------*/
+.main-area {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+/* MENU
+---------------------------------------------*/
+.menu-area {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.menu {
+    transition: color .3s;
+    font-size: 1.2em;
+}
+
+.menu:hover {
+    color: #28bb95;
+}
+
+
+/* ANNOTATION
+---------------------------------------------*/
+.annotation {
+    margin: 20px auto 0 auto;
+    display: grid;
+    width: 440px;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.1em;
+}
+
+.which-turn {
+    text-align: left;
+}
+
+.error-msg {
+    text-align: right;
+    color: orangered;
+}
+
+/* BOARD
+---------------------------------------------*/
+.board {
+    text-align: center;
+    margin: 10px auto 10px auto;
+    padding: 10px;
+    display: grid;
+    width: 455px;
+    grid-template-columns: repeat(8,50px);
+    grid-auto-rows: 50px;
+    column-gap: 5px;
+    row-gap: 5px;
+    background-color: #45342a;
+    color: #fcfcfc;
+}
+
+
+/* CELL
+---------------------------------------------*/
+.cell {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2.25em;
+    padding-top: 5px;
+    background-color: #fcfcfc;
+    color: #45342a;
+}
+
+
+/* RESULT
+---------------------------------------------*/
+.result {
+    margin: 15px auto 15px auto;
+    width: 440px;
+    text-align: left;
+    font-size: 1.1em;
+}
